@@ -58,8 +58,7 @@ def homepage():
 
 def dataset():
     st.header("Dataset")
-
-    file="D:/gitbuild/clustering/mall.csv"
+    file = "mall.csv"
     data = pd.read_csv(file)
     
     data=data.rename(columns={'CustomerID':'custid',
